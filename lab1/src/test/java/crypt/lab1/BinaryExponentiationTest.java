@@ -15,9 +15,9 @@ public class BinaryExponentiationTest {
     @Test
     public void isPrimeTest() {
         for (int i = 0;i < numberOfTestCases; ++i) {
-            BigInteger value = BigInteger.probablePrime(numberOfBits, random);
-            BigInteger exp = BigInteger.probablePrime(numberOfBits, random);
-            BigInteger module = BigInteger.probablePrime(numberOfBits, random);
+            BigInteger value = new BigInteger(numberOfBits, random);
+            BigInteger exp = new BigInteger(numberOfBits, random);
+            BigInteger module = new BigInteger(numberOfBits, random);
 
             assertEquals(BinaryExponentiation.pow(value, exp, module), value.modPow(exp, module));
         }
