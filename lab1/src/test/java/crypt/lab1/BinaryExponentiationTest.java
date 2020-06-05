@@ -13,7 +13,7 @@ public class BinaryExponentiationTest {
     private static int numberOfBits = 512;
     private static int numberOfTestCases = 100;
     @Test
-    public void isPrimeTest() {
+    public void powTest() {
         for (int i = 0;i < numberOfTestCases; ++i) {
             BigInteger value = new BigInteger(numberOfBits, random);
             BigInteger exp = new BigInteger(numberOfBits, random);

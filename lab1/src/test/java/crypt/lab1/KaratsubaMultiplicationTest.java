@@ -12,7 +12,7 @@ public class KaratsubaMultiplicationTest {
     private static int numberOfBits = 512;
     private static int numberOfTestCases = 100;
     @Test
-    public void isPrimeTest() {
+    public void multiTest() {
         for (int i = 0;i < numberOfTestCases; ++i) {
             BigInteger value1 = new BigInteger(numberOfBits, random);
             BigInteger value2 = new BigInteger(numberOfBits, random);
